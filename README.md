@@ -1,6 +1,6 @@
 # Bible Planner - Bible Versions Downloader
 
-A specialized utility to download and synchronize Bible versions from Supabase Storage for the Bible Planner project.
+A specialized utility to download and synchronize Bible versions from Supabase Storage for the [Bible Planner](https://www.bibleplanner.app) project.
 
 ## Features
 

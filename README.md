@@ -36,17 +36,17 @@ SUPABASE_KEY=your_publishable_anon_key
 
 ## Performance Tuning
 
-You can adjust the speed of the script by modifying these constants in `download_bibles.py`:
+You can adjust the speed of the script by modifying these constants in `src/config.py`:
 
 - `MAX_LISTING_WORKERS`: Number of threads for scanning directories (default: 10).
 - `MAX_DOWNLOAD_WORKERS`: Number of threads for downloading files (default: 20).
 
 ## Usage
 
-Run the downloader script:
+Run the downloader script from the root directory:
 
 ```bash
-python3 download_bibles.py
+python3 -m src.main
 ```
 
 ## Troubleshooting
@@ -60,7 +60,3 @@ ON storage.objects FOR SELECT
 TO anon 
 USING (bucket_id = 'content');
 ```
-
-## Contributing
-
-Always use **Type Hints** for any modifications to Python files as per the `AGENTS.md` guidelines.
